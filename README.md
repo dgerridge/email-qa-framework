@@ -19,8 +19,8 @@ It combines deterministic checks, optional AI-assisted review, and human approva
 
 The repository includes two synthetic examples:
 
-- [Launch-blocked report](examples/reports/launch-blocked.html): missing tracking, placeholder copy, and other actionable findings
-- [Ready-for-review report](examples/reports/ready-for-review.html): deterministic checks pass, with final editorial confirmation still required
+- [Launch-blocked report](https://dgerridge.github.io/email-qa-framework/examples/reports/launch-blocked.html): missing tracking, placeholder copy, and other actionable findings
+- [Ready-for-review report](https://dgerridge.github.io/email-qa-framework/examples/reports/ready-for-review.html): deterministic checks pass, with final editorial confirmation still required
 
 Generate them again locally:
 
