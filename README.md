@@ -17,6 +17,10 @@ It combines deterministic checks, optional AI-assisted review, and human approva
 
 ## See it in action
 
+[![Email QA report showing a launch-blocked verdict and actionable findings](docs/assets/email-qa-report-preview.png)](https://dgerridge.github.io/email-qa-framework/examples/reports/launch-blocked.html)
+
+*Example report generated from synthetic campaign data. [Open the interactive HTML report →](https://dgerridge.github.io/email-qa-framework/examples/reports/launch-blocked.html)*
+
 The repository includes two synthetic examples:
 
 - [Launch-blocked report](https://dgerridge.github.io/email-qa-framework/examples/reports/launch-blocked.html): missing tracking, placeholder copy, and other actionable findings
