@@ -1,0 +1,21 @@
+{
+  "campaign": {
+    "id": "DEMO-1042",
+    "name": "Autumn member event",
+    "kind": "broadcast"
+  },
+  "message": {
+    "subject": "Your early access to the autumn member event starts now",
+    "preheader": "",
+    "from_name": "Example Company",
+    "from_email": "hello@email.example.test",
+    "reply_to": "support@example.test",
+    "plain_text": "Members receive early access. TODO add final offer terms.",
+    "html": "<!doctype html><html><body><main><h1>Early access is here</h1><p>Members receive early access to our autumn collection. TODO add final offer terms.</p><a href=\"https://shop.example.test/collections/autumn?utm_source=lifecycle&utm_medium=email\">Shop the collection</a><img src=\"https://assets.example.test/autumn-hero.jpg\"><footer><a href=\"{{unsubscribe_url}}\">Unsubscribe</a></footer></main></body></html>"
+  },
+  "metadata": {
+    "source": "synthetic-file",
+    "template_language": "handlebars",
+    "brief_reference": "BRIEF-DEMO-1042"
+  }
+}

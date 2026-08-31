@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "email-qa-framework"
+version = "0.1.0"
+description = "A client- and platform-neutral reference framework for marketing email QA"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Dave Gerridge" }]
+keywords = ["email", "quality-assurance", "marketing-operations", "crm", "ai"]
+
+[project.scripts]
+email-qa = "email_qa_framework.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

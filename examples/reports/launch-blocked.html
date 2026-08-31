@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email QA Report — Autumn member event</title>
+  <style>
+    :root{--ink:#17212b;--muted:#667085;--line:#e4e7ec;--surface:#fff;--canvas:#f5f7fa;--accent:#5b46e8}
+    *{box-sizing:border-box} body{margin:0;background:var(--canvas);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+    .page{max-width:960px;margin:0 auto;padding:56px 24px 80px} .eyebrow{color:var(--accent);font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+    h1{font-size:34px;line-height:1.15;margin:10px 0 8px;letter-spacing:-.03em} .meta{color:var(--muted);font-size:14px} .hero{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;margin:28px 0;box-shadow:0 8px 30px rgba(16,24,40,.05)}
+    .verdict{display:inline-flex;padding:8px 13px;border-radius:999px;font-size:13px;font-weight:750} .blocked{background:#fee4e2;color:#b42318} .ready{background:#ecfdf3;color:#067647}
+    .counts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px} .count{border:1px solid var(--line);border-radius:12px;padding:14px} .count strong{display:block;font-size:24px} .count span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+    h2{font-size:20px;margin:36px 0 14px} .finding{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;margin:12px 0} .finding-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap} .badge{font-size:12px;font-weight:750;border-radius:999px;padding:4px 9px} .severity{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em} code{font-size:12px;color:#475467;background:#f2f4f7;border-radius:5px;padding:3px 6px} h3{font-size:17px;margin:13px 0 5px} .finding p{margin:5px 0;color:#475467} .recommendation{border-left:3px solid #b9afff;padding-left:12px;margin-top:14px!important} .evidence{color:#475467;font-size:13px;overflow-wrap:anywhere} footer{margin-top:36px;color:var(--muted);font-size:12px}
+    @media(max-width:640px){.page{padding:32px 16px}h1{font-size:28px}.counts{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body><main class="page">
+  <div class="eyebrow">Email QA Framework</div>
+  <h1>Autumn member event</h1>
+  <div class="meta">Campaign DEMO-1042 · Broadcast · Policy 2026.08</div>
+  <section class="hero">
+    <span class="verdict blocked">Launch blocked</span>
+    <div class="counts">
+      <div class="count"><strong>3</strong><span>Fails</span></div>
+      <div class="count"><strong>1</strong><span>Warnings</span></div>
+      <div class="count"><strong>1</strong><span>Human review</span></div>
+      <div class="count"><strong>3</strong><span>Passes</span></div>
+    </div>
+  </section>
+  <h2>Findings</h2>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#b42318;background:#fee4e2">Fail</span>
+        <span class="severity">high</span>
+        <code>content.preheader</code>
+      </div>
+      <h3>Preheader</h3>
+      <p>The preheader is empty.</p>
+      <p class="recommendation"><strong>Recommended action:</strong> Add the approved preheader before launch.</p>
+    </article>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#b42318;background:#fee4e2">Fail</span>
+        <span class="severity">high</span>
+        <code>content.placeholders</code>
+      </div>
+      <h3>Placeholder content</h3>
+      <p>Possible unfinished content matched 1 configured pattern(s).</p>
+      <ul class="evidence"><li>TODO</li></ul><p class="recommendation"><strong>Recommended action:</strong> Replace or remove placeholder content.</p>
+    </article>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#b42318;background:#fee4e2">Fail</span>
+        <span class="severity">high</span>
+        <code>tracking.required_parameters</code>
+      </div>
+      <h3>Required tracking parameters</h3>
+      <p>1 tracked destination(s) do not meet policy.</p>
+      <ul class="evidence"><li>https://shop.example.test/collections/autumn?utm_source=lifecycle&amp;utm_medium=email — missing or invalid: utm_campaign</li></ul><p class="recommendation"><strong>Recommended action:</strong> Add the configured tracking parameters.</p>
+    </article>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#b54708;background:#fffaeb">Warning</span>
+        <span class="severity">medium</span>
+        <code>accessibility.image_alt</code>
+      </div>
+      <h3>Image alternative text</h3>
+      <p>1 image(s) have no alternative text.</p>
+      <ul class="evidence"><li>https://assets.example.test/autumn-hero.jpg</li></ul><p class="recommendation"><strong>Recommended action:</strong> Add meaningful alt text or alt=&quot;&quot; for decorative images.</p>
+    </article>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#175cd3;background:#eff8ff">Human review</span>
+        <span class="severity">medium</span>
+        <code>approval.final_review</code>
+      </div>
+      <h3>Final content approval</h3>
+      <p>Confirm copy, offer terms, audience, destinations, and rendered appearance against the approved brief.</p>
+      
+    </article>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#067647;background:#ecfdf3">Pass</span>
+        <span class="severity">low</span>
+        <code>content.subject</code>
+      </div>
+      <h3>Subject line</h3>
+      <p>Subject is present and within the 60-character threshold.</p>
+      
+    </article>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#067647;background:#ecfdf3">Pass</span>
+        <span class="severity">low</span>
+        <code>compliance.unsubscribe</code>
+      </div>
+      <h3>Unsubscribe mechanism</h3>
+      <p>A configured unsubscribe marker is present.</p>
+      
+    </article>
+    <article class="finding">
+      <div class="finding-top">
+        <span class="badge" style="color:#067647;background:#ecfdf3">Pass</span>
+        <span class="severity">low</span>
+        <code>links.https</code>
+      </div>
+      <h3>Secure links</h3>
+      <p>No insecure HTTP destinations were found.</p>
+      
+    </article>
+  <footer>Generated from synthetic demonstration data. A QA result does not authorize deployment; final approval remains with the designated reviewer.</footer>
+</main></body></html>

@@ -1,0 +1,21 @@
+{
+  "organization": "Example Company",
+  "policy_version": "2026.08",
+  "subject_warning_length": 60,
+  "required_tracking_parameters": {
+    "utm_source": "lifecycle",
+    "utm_medium": "email",
+    "utm_campaign": "*"
+  },
+  "tracking_domains": ["shop.example.test"],
+  "tracking_exempt_paths": ["/privacy", "/terms", "/unsubscribe"],
+  "unsubscribe_markers": ["{{unsubscribe_url}}", "%%unsubscribe%%"],
+  "placeholder_patterns": [
+    "lorem ipsum",
+    "TODO",
+    "FPO",
+    "insert copy",
+    "example promo code"
+  ],
+  "approved_from_domains": ["email.example.test"]
+}

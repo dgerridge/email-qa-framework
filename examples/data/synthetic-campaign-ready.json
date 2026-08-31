@@ -1,0 +1,21 @@
+{
+  "campaign": {
+    "id": "DEMO-1043",
+    "name": "Member welcome",
+    "kind": "triggered"
+  },
+  "message": {
+    "subject": "Welcome—your membership starts here",
+    "preheader": "Explore your benefits and make the most of your membership.",
+    "from_name": "Example Company",
+    "from_email": "hello@email.example.test",
+    "reply_to": "support@example.test",
+    "plain_text": "Welcome. Explore your benefits at https://shop.example.test/account.",
+    "html": "<!doctype html><html><body><main><h1>Welcome</h1><p>Your membership starts here.</p><a href=\"https://shop.example.test/account?utm_source=lifecycle&utm_medium=email&utm_campaign=member-welcome\">Explore your benefits</a><img src=\"https://assets.example.test/welcome.jpg\" alt=\"A welcome package from Example Company\"><footer><a href=\"{{unsubscribe_url}}\">Unsubscribe</a></footer></main></body></html>"
+  },
+  "metadata": {
+    "source": "synthetic-file",
+    "template_language": "handlebars",
+    "brief_reference": "BRIEF-DEMO-1043"
+  }
+}
