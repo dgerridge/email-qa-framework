@@ -1,5 +1,7 @@
 # Email QA Framework
 
+[![Tests](https://github.com/dgerridge/email-qa-framework/actions/workflows/tests.yml/badge.svg)](https://github.com/dgerridge/email-qa-framework/actions/workflows/tests.yml)
+
 An open, configurable reference framework for pre-send marketing email quality assurance.
 
 It combines deterministic checks, optional AI-assisted review, and human approval checkpoints in one portable workflow. The framework is intentionally independent of any particular company, email service provider (ESP), collaboration tool, or model vendor.
